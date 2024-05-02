@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Holiday Package Management</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Holiday Package Management</h1>
+        <form id="holidayForm">
+            <label for="holidayName">Holiday Name:</label>
+            <input type="text" id="holidayName" name="holidayName" required>
+            <label for="duration">Duration (Nights):</label>
+            <input type="number" id="duration" name="duration" required>
+            <label for="destination">Destination:</label>
+            <input type="text" id="destination" name="destination" required>
+            <label for="location">Location:</label>
+            <input type="text" id="location" name="location" required>
+            <label for="amenities">Amenities:</label>
+            <textarea id="amenities" name="amenities" required></textarea>
+            <button type="submit">Add Holiday Package</button>
+        </form>
+        <div id="holidayPackages"></div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
